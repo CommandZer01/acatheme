@@ -47,7 +47,7 @@
 								</section> <?php // end article section ?>
 
 								<footer class="article-footer cf">
-
+									<?php wp_footer(); ?>
 								</footer>
 
 								<?php comments_template(); ?>
@@ -58,7 +58,6 @@
 
 						</main>
 
-						<?php get_sidebar(); ?>
 
 				</div>
 

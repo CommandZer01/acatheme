@@ -17,10 +17,10 @@
     					'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
 						)); ?>
 					</nav>
-
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
-
-				</div>
+					<div class="footer-text">
+						<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p><a href="http://www.austincodingacademy.com/tos"><p>Terms</p></a><a href="http://www.austincodingacademy.com/privacy"><p>Privacy Policy</p></a>
+					</div>
+					</div>
 
 			</footer>
 
