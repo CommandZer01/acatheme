@@ -2,7 +2,7 @@
 
 Author: Gregg's stylesheet
 
-Stylesheet: this is gregg's don't touch 
+Stylesheet: this is gregg's don't touch
 
 Here's where the magic happens. Here, you'll see we are calling in
 the separate media queries. The base mobile goes outside any query
@@ -18,3 +18,8 @@ http://thesassway.com/advanced/modular-css-naming-conventions
 #header .superbox{
     display:none;
 }
+
+.hentry {
+  background-color: white;
+  margin-bottom: 1.5em;
+  }
