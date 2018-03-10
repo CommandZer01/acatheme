@@ -116,3 +116,10 @@ body {
 .nav .sub-menu-difficult:hover>ul {
   transform: translate3d(7%, 25.05%, 0);
 }
+
+#logo {
+  background-image: url('http://austincodingacademy.zer0web.com/wp-content/uploads/2018/03/ACA-austin-logo-white.png}');
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 5px;
+}
