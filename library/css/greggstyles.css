@@ -23,3 +23,10 @@ http://thesassway.com/advanced/modular-css-naming-conventions
   background-color: white;
   margin-bottom: 1.5em;
   }
+
+  .midWidthNoBorder {
+      width: 80%;
+      padding: 0px!important;
+      margin: auto;
+      max-width: 1440px;
+  }

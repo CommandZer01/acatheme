@@ -1300,6 +1300,13 @@ LAYOUT & GRID STYLES
   width: 96%;
   margin: 0 auto; }
 
+.midWidthNoBorder {
+    width: 80%;
+    padding: 0px!important;
+    margin: auto;
+    max-width: 1440px;
+  }
+
 /*********************
 LINK STYLES
 *********************/
