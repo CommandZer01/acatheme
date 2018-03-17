@@ -1,30 +1,3 @@
-/*! Made with Bones: http://themble.com/bones :) */
-
-/******************************************************************
-Site Name: austincodingacademy.com
-Author: Phillip Alexander Meek
-
-Stylesheet: Main Stylesheet
-
-Here's where the magic happens. Here, you'll see we are calling in
-the separate media queries. The base mobile goes outside any query
-and is called at the beginning, after that we call the rest
-of the styles inside media queries.
-
-Helpful articles on Sass file organization:
-http://thesassway.com/advanced/modular-css-naming-conventions
-
-******************************************************************/
-
-/******************************************************************
-Site Name: austincodingacademy
-Author: Phillip Alexander Meek
-
-Stylesheet: Custom Stylesheet
-
-Edits made by Phillip Alexander Meek.
-******************************************************************/
-
 #main {
   width: 100%;
   margin-bottom: 60px;
@@ -44,8 +17,13 @@ body {
   min-height: 100vh;
 }
 
+.hentry header {
+  border-bottom: none;
+  padding: 1.5em;
+}
+
 .footer {
-  position: absolute;
+  position: relative;
   margin: 0 auto;
   width: 100%;
   height: 55px;
@@ -87,25 +65,6 @@ body {
   bottom: -22px;
 }
 
-@media only screen and (min-width: 1030px) {
-  .wrap {
-    width: 95%;
-  }
-}
-
-.nav li:hover>ul {
-  opacity: 1;
-  transform: translate3d(7%, 34%, 0);
-  transition-delay: 0s, 0s, 0.5s;
-  transition-duration: 0.5s, 0.5s, 0s;
-  transition-property: opacity, transform, visibility;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation: fade 1s;
-  list-style: none;
-  -webkit-transition: opacity 600ms, visibility 600ms;
-  transition: opacity 600ms, visibility 600ms;
-}
-
 .sub-menu {
   opacity: 0;
   transition-delay: 0s, 0s, 0.5s;
@@ -116,6 +75,156 @@ body {
   z-index: 99999;
 }
 
+.wrap {
+  width: 100%;
+}
+
+.nav li:hover>ul {
+  opacity: 1;
+  transform: translate3d(7%, 33.75%, 0);
+  transition-delay: 0s, 0s, 0.5s;
+  transition-duration: 0.5s, 0.5s, 0s;
+  transition-property: opacity, transform, visibility;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation: fade 1s;
+  list-style: none;
+  -webkit-transition: opacity 600ms, visibility 600ms;
+  transition: opacity 600ms, visibility 600ms;
+  transform-style: preserve-3d;
+}
+
 .nav .sub-menu-difficult:hover>ul {
-  transform: translate3d(7%, 25.5%, 0);
+  transform: translate3d(7%, 25.25%, 0);
+}
+
+.sub-menu a {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  transform-style: flat;
+  color: #fff;
+  opacity: 1;
+  font-weight: 900;
+}
+
+body {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+#inner-header>a>img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vh;
+  height: 10vh;
+  right: -20px;
+  bottom: -23px;
+  position: relative;
+}
+
+.nav li a:hover, .nav li a:focus {
+  color: white;
+  text-decoration: none;
+}
+
+.page-title, .byline, .vcard {
+  display: none;
+}
+
+.widget-title {
+  font-size: 2.2em;
+}
+
+#content {
+  margin-top: 0;
+}
+
+/* 2560x1600 */
+
+@media (min-width: 159em) {
+  .nav .sub-menu {
+    position: relative;
+    bottom: -555px;
+  }
+  .nav .sub-menu-difficult ul {
+    position: relative;
+    bottom: -163px;
+  }
+}
+
+/* 1280x800 */
+
+@media (min-width:49.938em) and (max-width: 99.938em) {
+  .nav li {
+    float: none;
+  }
+  .nav li ul.sub-menu, .nav li ul.children {
+    border: none;
+    top: -100px;
+  }
+  .nav li ul.sub-menu .nav li ul.children, .sub-menu-difficult ul li {
+    bottom: -24px;
+  }
+}
+
+@media (min-width:48em) and (max-width: 79.938em) {
+  #inner-header>a>img {
+    right: -30px;
+  }
+  .menu-item {
+    width: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    bottom: -30px;
+  }
+  .nav .sub-menu {
+    position: relative;
+    top: -90px;
+    left: -30px;
+  }
+  .dropdown ul li>a {
+    position: relative;
+    margin-left: -5vw;
+    margin-right: -18vw;
+    left: -40px;
+    bottom: -92.5px;
+    background-color: #313944;
+  }
+  .sub-menu-difficult ul li>a {
+    position: relative;
+    margin-left: -5vw;
+    margin-right: -18vw;
+    left: -40px;
+    bottom: -98px;
+    background-color: #313944;
+  }
+  .dropdown a {
+    width: 200px;
+    margin: 0 2px;
+  }
+  .nav li ul.sub-menu li a {
+    border: 1px solid white;
+    width: 400px;
+  }
+  .menu-item-has-children:after {
+    position: relative;
+    justify-content: flex-end;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #FFF;
+    font-size: 0;
+    line-height: 0;
+    bottom: -22px;
+  }
+  .nav {
+    height: 100px;
+  }
+  .hentry header {
+    border-bottom: none;
+    padding: 4.5em;
+  }
 }
