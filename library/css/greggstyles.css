@@ -36,5 +36,5 @@ http://thesassway.com/advanced/modular-css-naming-conventions
 }
 
 .admissionForm input {
-    max-width: 100%;
+    max-width: 100%!important;
 }
