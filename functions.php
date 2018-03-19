@@ -8,6 +8,20 @@ just edit things like thumbnail sizes, header images,
 sidebars, comments, etc.
 */
 
+
+/* load stylesheets */
+ function alice_syles() {
+  wp_register_style ('alice-styles', get_template_directory_uri().'/css/alice-styles.css', array(), '', 'all' );
+ }
+
+
+
+/* wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
+
+wp_enqueue_style( 'bones-stylesheet' );
+
+ */
+
 // LOAD BONES CORE (if you remove this, the theme will break)
 require_once( 'library/bones.php' );
 
@@ -45,6 +59,9 @@ function bones_ahoy() {
 
   // enqueue base scripts and styles
   add_action( 'wp_enqueue_scripts', 'bones_scripts_and_styles', 999 );
+
+  // enqueue alice styles
+  add_action('wp_enqueue_scripts', 'alice_styles', 1000);
   // ie conditional wrapper
 
   // launching this stuff after theme setup
@@ -58,7 +75,9 @@ function bones_ahoy() {
   // cleaning up excerpt
   add_filter( 'excerpt_more', 'bones_excerpt_more' );
 
-} /* end bones ahoy */
+}
+
+/* end bones ahoy */
 
 // let's get this party started
 add_action( 'after_setup_theme', 'bones_ahoy' );
@@ -115,14 +134,14 @@ new image size.
 
 /************* THEME CUSTOMIZE *********************/
 
-/* 
+/*
   A good tutorial for creating your own Sections, Controls and Settings:
   http://code.tutsplus.com/series/a-guide-to-the-wordpress-theme-customizer--wp-33722
-  
+
   Good articles on modifying the default options:
   http://natko.com/changing-default-wordpress-theme-customization-api-sections/
   http://code.tutsplus.com/tutorials/digging-into-the-theme-customizer-components--wp-27162
-  
+
   To do:
   - Create a js for the postmessage transport method
   - Create some sanitize functions to sanitize inputs
@@ -132,7 +151,7 @@ new image size.
 function bones_theme_customizer($wp_customize) {
   // $wp_customize calls go here.
   //
-  // Uncomment the below lines to remove the default customize sections 
+  // Uncomment the below lines to remove the default customize sections
 
   // $wp_customize->remove_section('title_tagline');
   // $wp_customize->remove_section('colors');
@@ -142,7 +161,7 @@ function bones_theme_customizer($wp_customize) {
 
   // Uncomment the below lines to remove the default controls
   // $wp_customize->remove_control('blogdescription');
-  
+
   // Uncomment the following to change the default section titles
   // $wp_customize->get_section('colors')->title = __( 'Theme Colors' );
   // $wp_customize->get_section('background_image')->title = __( 'Images' );
@@ -244,4 +263,4 @@ function bones_fonts() {
 
 add_action('wp_enqueue_scripts', 'bones_fonts');
 
-/* DON'T DELETE THIS CLOSING TAG */ ?>
+/* DON'T DELETE THIS CLOSING TAG */?>

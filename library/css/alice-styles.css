@@ -27,7 +27,7 @@ body {
   margin: 0 auto;
   width: 100%;
   height: 55px;
-  bottom: 0ex;
+  bottom: 0;
 }
 
 .footer-text {
@@ -89,6 +89,8 @@ body {
   animation: fade 1s;
   list-style: none;
   -webkit-transition: opacity 600ms, visibility 600ms;
+  -moz-transition: opacity 600ms, visibility 600ms;
+  -o-transition: opacity 600ms, visibility 600ms;
   transition: opacity 600ms, visibility 600ms;
   transform-style: preserve-3d;
 }
@@ -111,6 +113,21 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  background-color: white;
+}
+
+.hentry {
+  margin-bottom: 2.5em;
+  border: none;
+}
+
+.header {
+  height: 140px;
+}
+
+nav {
+  position: relative;
+  bottom: -5px;
 }
 
 #inner-header>a>img {
@@ -120,7 +137,7 @@ body {
   width: 10vh;
   height: 10vh;
   right: -20px;
-  bottom: -23px;
+  bottom: -19px;
   position: relative;
 }
 
@@ -141,16 +158,33 @@ body {
   margin-top: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* 2560x1600 */
 
-@media (min-width: 159em) {
+@media (min-width: 100em) {
+  .nav li {
+    float: none;
+  }
   .nav .sub-menu {
     position: relative;
-    bottom: -555px;
+    bottom: -122px;
+    width: 200px;
+  }
+  .nav li ul.sub-menu li a, .nav li ul.children li a {
+    width: 200px;
   }
   .nav .sub-menu-difficult ul {
     position: relative;
-    bottom: -163px;
+    bottom: -171px;
+  }
+}
+
+@media only screen and (min-width: 1030px) {
+  .wrap {
+    width: 100%;
   }
 }
 
@@ -159,26 +193,42 @@ body {
 @media (min-width:49.938em) and (max-width: 99.938em) {
   .nav li {
     float: none;
+    white-space: nowrap;
   }
   .nav li ul.sub-menu, .nav li ul.children {
     border: none;
-    top: -100px;
+    top: -119px;
   }
-  .nav li ul.sub-menu .nav li ul.children, .sub-menu-difficult ul li {
-    bottom: -24px;
+  .dropdown ul>li {
+    position: relative;
+    right: -90px;
+  }
+  .sub-menu-difficult ul li {
+    right: -100px;
+    bottom: -42px;
   }
 }
+
+/* 1024x768 */
 
 @media (min-width:48em) and (max-width: 79.938em) {
   #inner-header>a>img {
     right: -30px;
   }
+  .nav .sub-menu-difficult ul {
+    position: relative;
+    bottom: -162px;
+  }
+  /*
+	li[class~="tracks"]  a{
+		width:20px;
+	} */
   .menu-item {
     width: 0;
     position: relative;
     display: flex;
     justify-content: space-evenly;
-    bottom: -30px;
+    bottom: -40px;
   }
   .nav .sub-menu {
     position: relative;
@@ -202,12 +252,15 @@ body {
     background-color: #313944;
   }
   .dropdown a {
-    width: 200px;
+    width: 400px;
     margin: 0 2px;
   }
   .nav li ul.sub-menu li a {
     border: 1px solid white;
     width: 400px;
+  }
+  .sub-menu {
+    height: 200px;
   }
   .menu-item-has-children:after {
     position: relative;
@@ -228,3 +281,55 @@ body {
     padding: 4.5em;
   }
 }
+
+/* 1024x768 again for some reason
+@media (min-width:45.250em) and (max-width: 47.938em) {
+
+		#menu-main-menu {
+    justify-content: space-evenly;
+	}
+
+		ul	.menu-item-has-children, .menu-item {
+		position:relative;
+		bottom:-29px;
+		display:flex;
+		flex-direction:row;
+		justify-content:space-evenly;
+	}
+
+	.sub-menu {
+		width:170px;
+	}
+
+	.sub-menu li a {
+		position:relative;
+		left:-10px;
+	}
+
+	li[class="tracks"] {
+		width:20px;
+	}
+
+	.menu-item-has-children:after {
+/* 		align-items:baseline;
+	}
+
+	.dropdown ul li > a {
+/* 		white-space:nowrap;
+		display:flex;
+		justify-content:space-evenly;
+	}
+
+	.nav li .dropdown {
+		background-color:#313944;
+		border-top: 1px solid white;
+		position:relative;
+		left:-10vh;
+		bottom:-32px;
+	}
+
+	.wrap {
+		height:155px;
+	}
+}
+*/
