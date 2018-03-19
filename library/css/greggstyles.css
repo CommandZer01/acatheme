@@ -30,3 +30,11 @@ http://thesassway.com/advanced/modular-css-naming-conventions
       margin: auto;
       max-width: 1440px;
   }
+
+  .admissionForm {
+    padding: 0%!important;
+}
+
+.admissionForm input {
+    max-width: 100%;
+}
