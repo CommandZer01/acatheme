@@ -114,6 +114,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   background-color: white;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .hentry {
