@@ -99,12 +99,27 @@ body {
   transform: translate3d(7%, 25.25%, 0);
 }
 
+.nav ul {
+  background-color: #F9B332;
+}
+
+.nav ul a {
+  color: #121212;
+}
+
+.nav li ul.sub-menu li a, .nav li ul.children li a {
+  padding-left: 10px;
+  border-right: 0;
+  display: flex;
+  width: 180px;
+  border-bottom: 1px solid #121212;
+}
+
 .sub-menu a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   transform-style: flat;
-  color: #fff;
   opacity: 1;
   font-weight: 900;
 }
@@ -163,6 +178,10 @@ a {
   text-decoration: none;
 }
 
+.footer-text a {
+  color: #FFF;
+}
+
 /* panel widget styling */
 
 .faqPanel {
@@ -175,23 +194,50 @@ a {
   margin-bottom: 25px;
 }
 
+.faqPanel .sow-accordion .sow-accordion-panel .sow-accordion-panel-header {
+  margin-bottom: 25px;
+  background-color: #004568;
+}
+
+.faqPanel .sow-accordion .sow-accordion-panel .sow-accordion-panel-header:hover {
+  background-color: #F9B332;
+}
+
+/* -------------- */
+
 /* 2560x1600 */
 
 @media (min-width: 100em) {
   .nav li {
     float: none;
+    top: -30px;
   }
   .nav .sub-menu {
     position: relative;
-    bottom: -122px;
+    bottom: -118.499999px;
     width: 200px;
+  }
+  .nav .sub-menu li {
+    position: relative;
+    top: 0;
   }
   .nav li ul.sub-menu li a, .nav li ul.children li a {
     width: 200px;
+    top: 0;
   }
   .nav .sub-menu-difficult ul {
     position: relative;
-    bottom: -171px;
+    bottom: -167.9px;
+  }
+  #inner-header>a>img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7vh;
+    height: 7vh;
+    right: -20px;
+    bottom: -15px;
+    position: relative;
   }
 }
 
@@ -210,15 +256,15 @@ a {
   }
   .nav li ul.sub-menu, .nav li ul.children {
     border: none;
-    top: -119px;
+    bottom: -129px;
   }
   .dropdown ul>li {
     position: relative;
     right: -90px;
   }
-  .sub-menu-difficult ul li {
-    right: -100px;
-    bottom: -42px;
+  .nav .sub-menu-difficult:hover>ul {
+    transform: translate3d(7%, 25.25%, 0);
+    bottom: -178px;
   }
 }
 
