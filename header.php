@@ -52,7 +52,7 @@
 				<div id="inner-header" class="wrap cf">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<a href="<?php echo home_url(); ?>" rel="nofollow"><img src='/wp-content/uploads/2018/02/ACA-austin-logo-white.png' title='Austin Coding Academy logo' alt='Austin Coding Academy logo'></a>
+					<a href="<?php echo home_url(); ?>" rel="nofollow"><img src='/wp-content/uploads/2018/03/ACA-austin-logo-white.png' title='Austin Coding Academy logo' alt='Austin Coding Academy logo'></a>
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
