@@ -31,3 +31,7 @@ http://thesassway.com/advanced/modular-css-naming-conventions
     background:transparent;
     font-size:12px!important;
 }
+
+.fullWidthNoBorder .entry-content {
+    padding: 0px;
+}
