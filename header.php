@@ -18,8 +18,10 @@
 		<meta name="MobileOptimized" content="320">
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/library/css/greggstyles.css">
-		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/library/css/alice-styles.css">
+		
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/library/css/kenstyles.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
 
 		<?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
 		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-touch-icon.png">
@@ -52,7 +54,7 @@
 				<div id="inner-header" class="wrap cf">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<a href="<?php echo home_url(); ?>" rel="nofollow"><img src='http://localhost:8888/austincodingacademy.com/wp-content/uploads/2018/02/ACA-austin-logo-white.png' title='Austin Coding Academy logo' alt='Austin Coding Academy logo'></a>
+					<a href="<?php echo home_url(); ?>" rel="nofollow"><img src='/wp-content/uploads/2018/03/ACA-austin-logo-white.png' title='Austin Coding Academy logo' alt='Austin Coding Academy logo'></a>
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
