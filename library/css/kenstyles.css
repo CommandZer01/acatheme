@@ -35,3 +35,15 @@ http://thesassway.com/advanced/modular-css-naming-conventions
 .fullWidthNoBorder .entry-content {
     padding: 0px;
 }
+
+.lsow-stats-bars .lsow-stats-bar .lsow-stats-title span{
+	display:none;
+}
+
+.contactForm .sow-submit {
+    font-size: 1em!important;
+    padding: 1em 2em!important;
+    background: #f9b232!important;
+    color: #ffffff !important;
+    border: 1px solid #f9b232!important;
+}
