@@ -53,14 +53,16 @@ http://thesassway.com/advanced/modular-css-naming-conventions
 }
 
 .headerWithBackground{
-	    min-height: 100px;
+	   min-height: 100px;
     background-size: cover;
     background-position: 50% 50%;
+    background-color: #f9b232!important;
 }
 
 .headerWithBackgroundTitle{
-	    display: block!important;
-    color: #fff;
-    text-align: center;
-    font-size: 3.6em;
+	    text-align: center;
+    color: #ffffff;
+    line-height: 1.4em;
+    font-size: 40px;
+    display:block!important;
 }
