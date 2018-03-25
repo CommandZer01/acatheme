@@ -51,3 +51,16 @@ http://thesassway.com/advanced/modular-css-naming-conventions
 #inner-header {
     padding-top: 15px;
 }
+
+.headerWithBackground{
+	    min-height: 100px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.headerWithBackgroundTitle{
+	    display: block!important;
+    color: #fff;
+    text-align: center;
+    font-size: 3.6em;
+}
