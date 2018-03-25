@@ -138,7 +138,7 @@ body {
 }
 
 .header {
-  min-height: 140px;
+  min-height: 100px;
 }
 
 nav {
@@ -147,14 +147,15 @@ nav {
 }
 
 #inner-header>a>img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 10vh;
-  height: auto;
-  right: -20px;
-  bottom: -19px;
-  position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 10vh;
+    height: auto;
+    right: -20px;
+    float: left;
+    position: relative;
+
 }
 
 .nav li a:hover, .nav li a:focus {
