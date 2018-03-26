@@ -47,3 +47,22 @@ http://thesassway.com/advanced/modular-css-naming-conventions
     color: #ffffff !important;
     border: 1px solid #f9b232!important;
 }
+
+#inner-header {
+    padding-top: 15px;
+}
+
+.headerWithBackground{
+	   min-height: 100px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: #f9b232!important;
+}
+
+.headerWithBackgroundTitle{
+	    text-align: center;
+    color: #ffffff;
+    line-height: 1.4em;
+    font-size: 40px;
+    display:block!important;
+}

@@ -164,6 +164,7 @@ body {
   border: none;
 }
 
+<<<<<<< HEAD
 #inner-header>a>img {
   display: flex;
   justify-content: center;
@@ -173,6 +174,27 @@ body {
   right: -20px;
   bottom: -60px;
   position: relative;
+=======
+.header {
+  min-height: 100px;
+}
+
+nav {
+  position: relative;
+  bottom: -5px;
+}
+
+#inner-header>a>img {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 10vh;
+    height: auto;
+    right: -20px;
+    float: left;
+    position: relative;
+
+>>>>>>> origin/Student
 }
 
 .nav li a:hover, .nav li a:focus {

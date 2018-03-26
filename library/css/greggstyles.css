@@ -38,3 +38,12 @@ http://thesassway.com/advanced/modular-css-naming-conventions
 .admissionForm input {
     max-width: 100%!important;
 }
+
+.boxedWidth {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fullWidthWidget .widget {
+    padding:0px
+}
