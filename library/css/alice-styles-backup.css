@@ -4,14 +4,12 @@
 }
 
 #menu-main-menu {
-  position: relative;
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-  bottom: -15.5px;
 }
 
 body {
@@ -49,7 +47,7 @@ body {
 }
 
 .menu-item-has-children {
-  /* display: flex; */
+  display: flex;
   transition-duration: 0.3s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -67,10 +65,6 @@ body {
   bottom: -22px;
 }
 
-.nav li ul.sub-menu, .nav li ul.children {
-  margin-top: 0;
-}
-
 .sub-menu {
   opacity: 0;
   transition-delay: 0s, 0s, 0.75s;
@@ -82,7 +76,7 @@ body {
 }
 
 .wrap {
-  /* width: 100%; */
+  width: 100%;
 }
 
 .nav li:hover>ul {
@@ -123,8 +117,8 @@ body {
 }
 
 nav {
-  /* position: relative; */
-  /* top: auto; */
+  position: relative;
+  bottom: -27.34px;
 }
 
 .nav li ul.sub-menu, .nav li ul.children {
@@ -147,7 +141,7 @@ nav {
   font-weight: 900;
 }
 
-.sub-menu a:hover, .sub-menu-difficult a:hover {
+.sub-menu .sub-menu-difficult, a:hover {
   background-color: #004568;
 }
 
@@ -164,15 +158,28 @@ body {
   border: none;
 }
 
+.header {
+  height: 100px;
+}
+
+nav {
+  position: relative;
+  top: -20.35px;
+}
+
 #inner-header>a>img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 7vh;
+  width: 10vh;
   height: auto;
   right: -20px;
-  bottom: -60px;
+  bottom: -19px;
   position: relative;
+}
+
+#inner-header>a>img, #inner-header>a>img:focus, #inner-header>a>img:hover, #inner-header>a>img:active {
+  display: inline-block;
 }
 
 .nav li a:hover, .nav li a:focus {
@@ -194,10 +201,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 .footer-text a {
@@ -266,38 +269,17 @@ a:hover {
 
 /* -------------- */
 
-/* 2560x 1600 */
+/* 2560x1600 */
 
-@media (min-width: 160em) {
-  #menu-main-menu {
+@media (min-width: 100em) {
+  .nav li {
     float: none;
-    top: -8px;
+    top: -30px;
   }
-  #inner-header>a>img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10vh;
-    height: auto;
-    right: -20px;
-    bottom: -24px;
+  .nav .sub-menu {
     position: relative;
-  }
-}
-
-/* 1600x2560 */
-
-@media (width: 100em) and (max-width: 159.938em) {
-  #menu-main-menu {
-    float: none;
-    top: -9px;
-  }
-  ul.sub-menu {
-    position: relative;
+    bottom: -118.499999px;
     width: 200px;
-  }
-  .nav .sub-menu a {
-    height: 50px;
   }
   .nav .sub-menu li {
     position: relative;
@@ -331,180 +313,142 @@ a:hover {
 
 /* 1280x800 */
 
-@media (width:80em) and (max-width: 99.938em) {
-  #inner-header>a>img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10vh;
-    height: auto;
-    right: -20px;
-    bottom: -25px;
-    position: relative;
-  }
+@media (min-width:49.938em) and (max-width: 99.938em) {
   .nav li {
-    position: relative;
     float: none;
     white-space: nowrap;
-  }
-  .nav li ul.sub-menu, .nav li ul.children .sub-menu li {
-    top: -3.8px;
-  }
-  .sub-menu-difficult ul {
-    position: relative;
-    height: 198px;
   }
   .dropdown ul>li {
     position: relative;
     right: -90px;
   }
   .nav .sub-menu-difficult:hover>ul {
-    height: 151px;
     transform: translate3d(7%, 25.25%, 0);
-    top: 8.2px;
-  }
-}
-
-/* 800x1280 */
-
-@media (width:50em) and (max-width:79.938em) {
-  #inner-header>a>img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: 6vh;
-    right: -20px;
-    bottom: -15px;
-    position: relative;
-  }
-  #menu-main-menu {
-    float: none;
-    bottom: -6px;
-  }
-  .nav li ul.sub-menu, .nav li ul.children .sub-menu li {
-    top: 1.75px;
-  }
-  .nav .sub-menu-difficult:hover>ul {
-    height: 151px;
-    transform: translate3d(7%, 25.25%, 0);
-    top: 14.2px;
-  }
-  .entry-content {
-    margin-top: 7em;
+    bottom: 1.68px;
   }
 }
 
 /* 1024x768 */
 
-@media (width:64em) and (max-width:79.938em) {
+@media (min-width:48em) and (max-width: 79.938em) {
   #inner-header>a>img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: 10vh;
-    right: -20px;
-    bottom: -20px;
-    position: relative;
-  }
-  #menu-main-menu {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
-    bottom: -10.5px;
+    right: -30px;
   }
   .nav .sub-menu-difficult:hover>ul {
-    height: 151px;
     transform: translate3d(7%, 25.25%, 0);
-    top: 10.2px;
+    bottom: -163.35px;
   }
-  .nav li ul.sub-menu, .nav li ul.children .sub-menu li {
-    top: -1.9px;
+  /*
+	li[class~="tracks"]  a{
+		width:20px;
+	} */
+  .menu-item {
+    width: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    bottom: -40px;
+  }
+  .nav .sub-menu {
+    position: relative;
+    top: -90px;
+    left: -30px;
+  }
+  .dropdown ul li>a {
+    position: relative;
+    margin-left: -5vw;
+    margin-right: -18vw;
+    left: -40px;
+    bottom: -92.5px;
+    background-color: #313944;
+  }
+  .sub-menu-difficult ul li>a {
+    position: relative;
+    margin-left: -5vw;
+    margin-right: -18vw;
+    left: -40px;
+    bottom: -98px;
+    background-color: #313944;
+  }
+  .dropdown a {
+    width: 400px;
+    margin: 0 2px;
+  }
+  .nav li ul.sub-menu li a {
+    border: 1px solid white;
+    width: 400px;
+  }
+  .sub-menu {
+    height: 200px;
+  }
+  .menu-item-has-children:after {
+    position: relative;
+    justify-content: flex-end;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #FFF;
+    font-size: 0;
+    line-height: 0;
+    bottom: -22px;
+  }
+  .nav {
+    height: 100px;
+  }
+  .hentry header {
+    border-bottom: none;
+    padding: 4.5em;
   }
 }
 
-/* 768x1024 */
+/* 1024x768 again for some reason
+@media (min-width:45.250em) and (max-width: 47.938em) {
 
-@media (width:48em) and (max-width:63.938em) {
-  #inner-header>a>img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: 6.58vh;
-    right: -20px;
-    bottom: -15px;
-    position: relative;
-  }
-  .nav .sub-menu-difficult:hover>ul {
-    height: 151px;
-    transform: translate3d(7%, 25.25%, 0);
-    top: 14.5px;
-  }
+		#menu-main-menu {
+    justify-content: space-evenly;
+	}
+
+		ul	.menu-item-has-children, .menu-item {
+		position:relative;
+		bottom:-29px;
+		display:flex;
+		flex-direction:row;
+		justify-content:space-evenly;
+	}
+
+	.sub-menu {
+		width:170px;
+	}
+
+	.sub-menu li a {
+		position:relative;
+		left:-10px;
+	}
+
+	li[class="tracks"] {
+		width:20px;
+	}
+
+	.menu-item-has-children:after {
+/* 		align-items:baseline;
+	}
+
+	.dropdown ul li > a {
+/* 		white-space:nowrap;
+		display:flex;
+		justify-content:space-evenly;
+	}
+
+	.nav li .dropdown {
+		background-color:#313944;
+		border-top: 1px solid white;
+		position:relative;
+		left:-10vh;
+		bottom:-32px;
+	}
+
+	.wrap {
+		height:155px;
+	}
 }
-
-/* 800x600 */
-
-@media (width:50em) {
-  #inner-header>a>img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: 12vh;
-    right: -20px;
-    position: relative;
-  }
-  #menu-main-menu {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
-    bottom: -10.5px;
-  }
-  .nav li ul.sub-menu, .nav li ul.children .sub-menu li {
-    top: 2px;
-  }
-  .nav .sub-menu-difficult:hover>ul {
-    height: 151px;
-    transform: translate3d(7%, 25.25%, 0);
-    top: 14px;
-  }
-}
-
-/* 600x800 */
-
-@media (width:37.5em) {
-  #menu-main-menu {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    font-size: 100%;
-    height: 1em;
-    width: 1em;
-    position: relative;
-    width: 100%;
-    height: 220px;
-  }
-  #inner-header>a>img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 8vh;
-    height: auto;
-    bottom: -165px;
-    position: relative;
-  }
-  #main-main-menu li {
-    width: 33%;
-  }
-}
+*/
