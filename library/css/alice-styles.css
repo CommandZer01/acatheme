@@ -129,7 +129,7 @@ body {
 }
 
 .nav li.austinLocation ul.sub-menu {
-  top: 34px;
+  top: 1.5px;
 }
 
 .nav li a:hover {
@@ -218,6 +218,26 @@ a:hover {
   text-decoration: underline;
 }
 
+#getinTouch span {
+  transition: all 0.4s ease-in-out 0s;
+}
+
+#getinTouch a {
+  font-weight: 500;
+  background-color: #004568;
+}
+
+#getinTouch a:hover {
+  font-weight: 900;
+  background-color: #F9B332;
+  color: #000;
+  text-decoration: none;
+}
+
+#getinTouch a:hover span {
+  color: #000;
+}
+
 .footer-text a {
   color: #FFF;
 }
@@ -286,7 +306,7 @@ a:hover {
 
 /* bottom buttons main page */
 
-#dasNext .lsow-button {
+#getinTouch .lsow-button {
   margin: 0 auto;
   display: flex;
   width: 300px;
@@ -295,7 +315,7 @@ a:hover {
   justify-content: space-around;
 }
 
-#dasNext .lsow-button span {
+#getinTouch .lsow-button span {
   line-height: 10px;
 }
 
@@ -433,7 +453,7 @@ a:hover {
   .entry-content {
     margin-top: 7em;
   }
-  #dasNext {
+  #getinTouch {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -488,7 +508,7 @@ a:hover {
     white-space: nowrap;
     height: 149px;
   }
-  #dasNext {
+  #getinTouch {
     display: flex;
     flex-direction: column;
   }
@@ -589,7 +609,7 @@ a:hover {
     white-space: nowrap;
     height: 149px;
   }
-  #dasNext {
+  #getinTouch {
     display: flex;
     flex-direction: column;
   }
@@ -624,7 +644,7 @@ a:hover {
     position: relative;
     bottom: -22px;
   }
-  #dasNext {
+  #getinTouch {
     display: flex;
     flex-direction: column;
   }
