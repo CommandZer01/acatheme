@@ -65,7 +65,6 @@ body {
   font-size: 0;
   line-height: 0;
   bottom: -22px;
-  /* left: -440px; */
 }
 
 .nav li ul.sub-menu, .nav li ul.children {
@@ -606,17 +605,21 @@ a:hover {
     bottom: -40px;
     position: relative;
   }
-  #menu-main-menu {
-    height: 350px;
+  .nav {
+    height: 590px;
     width: 100%;
     flex-direction: column;
+    align-items: flex-start;
   }
-  #menu-main-menu .nav li ul.children {
-    display: none;
-    padding: 10px;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
+  #menu-main-menu li ul.sub-menu {
+    flex-basis: 100%;
+    opacity: 1;
+    height: 100%;
   }
+  /*   .sub-menu {
+    opacity:1;
+    display:inline-block;
+  } */
   .menu-item-has-children:after {
     position: relative;
     bottom: -22px;
