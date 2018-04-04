@@ -17,6 +17,7 @@
 body {
   position: relative;
   min-height: 100vh;
+  color: #222;
 }
 
 .hentry header {
@@ -32,7 +33,7 @@ body {
   bottom: 0;
 }
 
-.footer-text {
+.footer-nav {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -111,6 +112,10 @@ body {
 
 .nav ul a {
   color: #121212;
+}
+
+.nav a:hover {
+  color: #fff;
 }
 
 .nav li ul.sub-menu li a, .nav li ul.children li a {
@@ -210,12 +215,26 @@ nav {
   margin-top: 0;
 }
 
-a {
+section a {
   text-decoration: none;
+  color: #004568;
 }
 
-a:hover {
+a, a:visited {
+  color: #F9B332;
+}
+
+a:hover, a:focus, a:visited:hover, a:visited:focus {
   text-decoration: underline;
+  color: #F9B332;
+}
+
+.entry-content {
+  padding-top: 0;
+}
+
+#applicationProcess span {
+  color: #004568;
 }
 
 #getinTouch span {
@@ -241,6 +260,48 @@ a:hover {
 .footer-text a {
   color: #FFF;
 }
+
+.widget-title {
+  text-align: center;
+}
+
+/* top slider styles */
+
+.topSlider {
+  height: 500px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.topSlider a {
+  color: #004568;
+}
+
+.calendarIcon {
+  position: relative;
+  left: -75px;
+}
+
+.calendarIcon span {
+  font-size: 5em;
+  color: #004568;
+  display: flex;
+  justify-content: center;
+}
+
+.topSlider .so-widget-sow-layout-slider-default-ac76dd95cbcb .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h4 {
+  color: #333;
+}
+
+.whatitCosts {
+  margin-left: 55px;
+}
+
+.whatitCosts h3 {
+  text-align: left;
+}
+
+/* -------------- */
 
 /* accordion widget styling */
 
@@ -317,6 +378,58 @@ a:hover {
 
 #getinTouch .lsow-button span {
   line-height: 10px;
+}
+
+/* -------------- */
+
+/* terms & privacy / footer */
+
+.terms-and-policy {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+a[href="https://plus.google.com/+AustinCodingAcademy"], a[href="https://twitter.com/AustinCoding"], a[href="https://www.facebook.com/AustinCodingAcademy"], a[href="https://www.linkedin.com/company/austin-coding-academy"], a[href="https://www.instagram.com/austincodingacademy"] {
+  font-size: 0;
+}
+
+a[href="https://plus.google.com/+AustinCodingAcademy"]:before {
+  font-family: "FontAwesome";
+  content: "\f0d5";
+  font-size: 18pt;
+  line-height: 50px;
+}
+
+a[href="https://twitter.com/AustinCoding"]:before {
+  font-family: "FontAwesome";
+  content: "\f099";
+  font-size: 18pt;
+  line-height: 50px;
+}
+
+a[href="https://www.facebook.com/AustinCodingAcademy"]:before {
+  font-family: "FontAwesome";
+  content: "\f082";
+  font-size: 18pt;
+  line-height: 50px;
+}
+
+a[href="https://www.linkedin.com/company/austin-coding-academy"]:before {
+  font-family: "FontAwesome";
+  content: "\f0e1";
+  font-size: 18pt;
+  line-height: 50px;
+}
+
+a[href="https://www.instagram.com/austincodingacademy"]:before {
+  font-family: "FontAwesome";
+  content: "\f16d";
+  font-size: 18pt;
+  line-height: 50px;
 }
 
 /* -------------- */
@@ -600,9 +713,9 @@ a:hover {
     border-bottom: 1px solid #121212;
   }
   .nav li.austinLocation ul.sub-menu {
-    top: 31.45px;
+    top: -2.5px;
     white-space: nowrap;
-    height: 52px;
+    height: 149px;
   }
   .nav li.sub-menu-difficult ul.sub-menu {
     top: 10.5px;
