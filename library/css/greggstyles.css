@@ -47,3 +47,8 @@ http://thesassway.com/advanced/modular-css-naming-conventions
 .fullWidthWidget .widget {
     padding:0px
 }
+
+.midWidthTracks {
+    max-width: 1000px;
+    margin: auto;
+}
