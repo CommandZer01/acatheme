@@ -1,6 +1,6 @@
 <?php
 /*
- Template Name: Full width no borders no header
+ Template Name: Full width no borders with header
  *
  * This is your custom page template. You can create as many of these as you need.
  * Simply name is "page-whatever.php" and in add the "Template Name" title at the
@@ -24,8 +24,12 @@
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+								<header class="article-header headerWithBackground" style="background-image: url('<?php echo $thumb['0'];?>')">
 
-							
+									<h1 class="page-title headerWithBackgroundTitle"><?php the_title(); ?></h1>
+
+								</header>
 
 								<section class="entry-content cf" itemprop="articleBody">
 									<?php

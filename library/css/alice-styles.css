@@ -4,17 +4,20 @@
 }
 
 #menu-main-menu {
+  position: relative;
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   list-style: none;
+  bottom: -28.5px;
 }
 
 body {
   position: relative;
   min-height: 100vh;
+  color: #222;
 }
 
 .hentry header {
@@ -30,7 +33,7 @@ body {
   bottom: 0;
 }
 
-.footer-text {
+.footer-nav {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -65,18 +68,18 @@ body {
   bottom: -22px;
 }
 
-.sub-menu {
-  opacity: 0;
-  transition-delay: 0s, 0s, 0.5s;
-  transition-duration: 0.5s, 0.5s, 0s;
-  transition-property: opacity, transform, visibility;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation: fade 1s;
-  z-index: 99999;
+.nav li ul.sub-menu, .nav li ul.children {
+  margin-top: 0;
 }
 
-.wrap {
-  width: 100%;
+.sub-menu {
+  opacity: 0;
+  transition-delay: 0s, 0s, 0.75s;
+  transition-duration: 0.75s, 0.75s, 0s;
+  transition-property: opacity, transform, visibility;
+  transition-timing-function: cubic-bezier(.01, 0, .01, 1);
+  animation: fade 2s;
+  z-index: 99999;
 }
 
 .nav li:hover>ul {
@@ -99,6 +102,10 @@ body {
   transform: translate3d(7%, 25.25%, 0);
 }
 
+.nav li.sub-menu-difficult ul.sub-menu {
+  top: 14.75px;
+}
+
 .nav ul {
   background-color: #F9B332;
 }
@@ -107,12 +114,33 @@ body {
   color: #121212;
 }
 
+.nav a:hover {
+  color: #fff;
+}
+
 .nav li ul.sub-menu li a, .nav li ul.children li a {
   padding-left: 10px;
   border-right: 0;
   display: flex;
   width: 180px;
+  height: auto;
   border-bottom: 1px solid #121212;
+}
+
+.nav li ul.sub-menu, .nav li ul.children {
+  border: 1.25px solid #e49607;
+  top: -7px;
+  float: none;
+}
+
+.nav li.austinLocation ul.sub-menu {
+  top: 1.5px;
+}
+
+.nav li a:hover {
+  position: relative;
+  border-bottom: 2px solid #fff;
+  height: 43px;
 }
 
 .sub-menu a {
@@ -122,6 +150,10 @@ body {
   transform-style: flat;
   opacity: 1;
   font-weight: 900;
+}
+
+.sub-menu a:hover, .sub-menu-difficult a:hover {
+  background-color: #004568;
 }
 
 body {
@@ -137,8 +169,17 @@ body {
   border: none;
 }
 
+#inner-header>a>img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vh;
+  height: auto;
+  position: relative;
+}
+
 .header {
-  min-height: 140px;
+  min-height: 100px;
 }
 
 nav {
@@ -147,13 +188,13 @@ nav {
 }
 
 #inner-header>a>img {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   width: 10vh;
   height: auto;
   right: -20px;
-  bottom: -19px;
+  float: left;
   position: relative;
 }
 
@@ -174,13 +215,93 @@ nav {
   margin-top: 0;
 }
 
-a {
+section a {
   text-decoration: none;
+  color: #004568;
+}
+
+a, a:visited {
+  color: #F9B332;
+}
+
+a:hover, a:focus, a:visited:hover, a:visited:focus {
+  text-decoration: underline;
+  color: #F9B332;
+}
+
+.entry-content {
+  padding-top: 0;
+}
+
+#applicationProcess span {
+  color: #004568;
+}
+
+#getinTouch span {
+  transition: all 0.4s ease-in-out 0s;
+}
+
+#getinTouch a {
+  font-weight: 500;
+  background-color: #004568;
+}
+
+#getinTouch a:hover {
+  font-weight: 900;
+  background-color: #F9B332;
+  color: #000;
+  text-decoration: none;
+}
+
+#getinTouch a:hover span {
+  color: #000;
 }
 
 .footer-text a {
   color: #FFF;
 }
+
+.widget-title {
+  text-align: center;
+}
+
+/* top slider styles */
+
+.topSlider {
+  height: 500px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.topSlider a {
+  color: #004568;
+}
+
+.calendarIcon {
+  position: relative;
+  left: -75px;
+}
+
+.calendarIcon span {
+  font-size: 5em;
+  color: #004568;
+  display: flex;
+  justify-content: center;
+}
+
+.topSlider .so-widget-sow-layout-slider-default-ac76dd95cbcb .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h4 {
+  color: #333;
+}
+
+.whatitCosts {
+  margin-left: 55px;
+}
+
+.whatitCosts h3 {
+  text-align: left;
+}
+
+/* -------------- */
 
 /* accordion widget styling */
 
@@ -198,196 +319,448 @@ a {
 
 .faqPanel .lsow-accordion.style1 .lsow-panel .lsow-panel-title {
   color: #fff;
+  background-color: #004568;
 }
 
 .faqPanel .lsow-accordion.style1 .lsow-panel .lsow-panel-title:hover {
   background-color: #F9B332;
-  .faqPanel .lsow-accordion.style1 .lsow-panel .lsow-panel-title:after {
-    color: #fff;
+  color: #222;
+}
+
+.faqPanel .lsow-accordion.style1 .lsow-panel .lsow-panel-title:after {
+  font-size: 12pt;
+  color: #fff;
+  text-shadow: 1px 0 #fff;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.faqPanel .lsow-accordion.style1 .lsow-panel .lsow-panel-title:hover:after {
+  font-size: 12pt;
+  color: #222;
+  text-shadow: 1px 0 #222;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.lsow-panel-content {
+  color: #222;
+}
+
+.lsow-container button.slick-prev, .lsow-container button.slick-next {
+  visibility: hidden;
+}
+
+/* -------------- */
+
+/* company carousel */
+
+.wp-caption-text {
+  display: none;
+}
+
+.wp-caption {
+  background-color: transparent;
+}
+
+/* -------------- */
+
+/* bottom buttons main page */
+
+#getinTouch .lsow-button {
+  margin: 0 auto;
+  display: flex;
+  width: 300px;
+  height: 45px;
+  line-height: 10px;
+  justify-content: space-around;
+}
+
+#getinTouch .lsow-button span {
+  line-height: 10px;
+}
+
+/* -------------- */
+
+/* terms & privacy / footer */
+
+.terms-and-policy {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+a[href="https://plus.google.com/+AustinCodingAcademy"], a[href="https://twitter.com/AustinCoding"], a[href="https://www.facebook.com/AustinCodingAcademy"], a[href="https://www.linkedin.com/company/austin-coding-academy"], a[href="https://www.instagram.com/austincodingacademy"] {
+  font-size: 0;
+}
+
+a[href="https://plus.google.com/+AustinCodingAcademy"]:before {
+  font-family: "FontAwesome";
+  content: "\f0d5";
+  font-size: 18pt;
+  line-height: 50px;
+}
+
+a[href="https://twitter.com/AustinCoding"]:before {
+  font-family: "FontAwesome";
+  content: "\f099";
+  font-size: 18pt;
+  line-height: 50px;
+}
+
+a[href="https://www.facebook.com/AustinCodingAcademy"]:before {
+  font-family: "FontAwesome";
+  content: "\f082";
+  font-size: 18pt;
+  line-height: 50px;
+}
+
+a[href="https://www.linkedin.com/company/austin-coding-academy"]:before {
+  font-family: "FontAwesome";
+  content: "\f0e1";
+  font-size: 18pt;
+  line-height: 50px;
+}
+
+a[href="https://www.instagram.com/austincodingacademy"]:before {
+  font-family: "FontAwesome";
+  content: "\f16d";
+  font-size: 18pt;
+  line-height: 50px;
+}
+
+/* -------------- */
+
+/* 2560x 1600 */
+
+@media (min-width: 2560px) {
+  #menu-main-menu {
+    float: none;
+    bottom: -92px
   }
-  /* -------------- */
-  /* company carousel */
-  .companyCarousel {
-    background-color: red;
+  #inner-header>a>img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vh;
+    height: auto;
+    bottom: 11px;
+    right: -20px;
+    position: relative;
   }
-  /* -------------- */
-  /* 2560x1600 */
-  @media (min-width: 100em) {
-    .nav li {
-      float: none;
-      top: -30px;
-    }
-    .nav .sub-menu {
-      position: relative;
-      bottom: -118.499999px;
-      width: 200px;
-    }
-    .nav .sub-menu li {
-      position: relative;
-      top: 0;
-    }
-    .nav li ul.sub-menu li a, .nav li ul.children li a {
-      width: 200px;
-      top: 0;
-    }
-    .nav .sub-menu-difficult ul {
-      position: relative;
-      bottom: -167.9px;
-    }
-    #inner-header>a>img {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: auto;
-      height: 5vh;
-      right: -20px;
-      bottom: -15px;
-      position: relative;
-    }
+  .nav li.sub-menu-difficult ul.sub-menu {
+    top: 13.25px;
+    white-space: nowrap;
+    height: 149px;
   }
-  @media only screen and (min-width: 1030px) {
-    .wrap {
-      width: 100%;
-    }
+}
+
+/* 1600x2560 */
+
+@media (width: 1600px) and (max-width: 2559px) {
+  #menu-main-menu {
+    float: none;
+    bottom: -72px;
   }
-  /* 1280x800 */
-  @media (min-width:49.938em) and (max-width: 99.938em) {
-    .nav li {
-      float: none;
-      white-space: nowrap;
-    }
-    .nav li ul.sub-menu, .nav li ul.children {
-      border: none;
-      bottom: -129px;
-    }
-    .dropdown ul>li {
-      position: relative;
-      right: -90px;
-    }
-    .nav .sub-menu-difficult:hover>ul {
-      transform: translate3d(7%, 25.25%, 0);
-      bottom: -178px;
-    }
+  .nav li ul.sub-menu, .nav li ul.children {
+    top: 1px;
   }
-  /* 1024x768 */
-  @media (min-width:48em) and (max-width: 79.938em) {
-    #inner-header>a>img {
-      right: -30px;
-    }
-    .nav .sub-menu-difficult ul {
-      position: relative;
-      bottom: -162px;
-    }
-    /*
-	li[class~="tracks"]  a{
-		width:20px;
-	} */
-    .menu-item {
-      width: 0;
-      position: relative;
-      display: flex;
-      justify-content: space-evenly;
-      bottom: -40px;
-    }
-    .nav .sub-menu {
-      position: relative;
-      top: -90px;
-      left: -30px;
-    }
-    .dropdown ul li>a {
-      position: relative;
-      margin-left: -5vw;
-      margin-right: -18vw;
-      left: -40px;
-      bottom: -92.5px;
-      background-color: #313944;
-    }
-    .sub-menu-difficult ul li>a {
-      position: relative;
-      margin-left: -5vw;
-      margin-right: -18vw;
-      left: -40px;
-      bottom: -98px;
-      background-color: #313944;
-    }
-    .dropdown a {
-      width: 400px;
-      margin: 0 2px;
-    }
-    .nav li ul.sub-menu li a {
-      border: 1px solid white;
-      width: 400px;
-    }
-    .sub-menu {
-      height: 200px;
-    }
-    .menu-item-has-children:after {
-      position: relative;
-      justify-content: flex-end;
-      height: 0;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-top: 5px solid #FFF;
-      font-size: 0;
-      line-height: 0;
-      bottom: -22px;
-    }
-    .nav {
-      height: 100px;
-    }
-    .hentry header {
-      border-bottom: none;
-      padding: 4.5em;
-    }
+  ul.sub-menu {
+    position: relative;
+    width: 200px;
   }
-  /* 1024x768 again for some reason
-@media (min-width:45.250em) and (max-width: 47.938em) {
+  .nav .sub-menu a {
+    height: 50px;
+  }
+  .nav .sub-menu li {
+    position: relative;
+    top: 0;
+  }
+  .nav li ul.sub-menu li a, .nav li ul.children li a {
+    width: 200px;
+    top: 0;
+  }
+  #inner-header>a>img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 5vh;
+    right: -20px;
+    bottom: 12px;
+    position: relative;
+  }
+  .nav li.sub-menu-difficult ul.sub-menu {
+    top: 13.4px;
+    white-space: nowrap;
+    height: 149px;
+  }
+}
 
-		#menu-main-menu {
-    justify-content: space-evenly;
-	}
+@media only screen and (min-width: 1030px) {
+  .wrap {
+    width: 100%;
+  }
+}
 
-		ul	.menu-item-has-children, .menu-item {
-		position:relative;
-		bottom:-29px;
-		display:flex;
-		flex-direction:row;
-		justify-content:space-evenly;
-	}
+/* 1280x800 */
 
-	.sub-menu {
-		width:170px;
-	}
+@media (width:1280px) and (max-width: 1599px) {
+  #inner-header>a>img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vh;
+    height: auto;
+    right: -20px;
+    bottom: 5px;
+    position: relative;
+  }
+  .nav li ul.sub-menu, .nav li ul.children {
+    top: 1.5px;
+  }
+  .nav li {
+    position: relative;
+    float: none;
+    white-space: nowrap;
+  }
+  .sub-menu-difficult ul {
+    position: relative;
+    height: 198px;
+  }
+  .dropdown ul>li {
+    position: relative;
+    right: -90px;
+  }
+  .nav li.sub-menu-difficult ul.sub-menu {
+    top: 13.75px;
+    white-space: nowrap;
+    height: 149px;
+  }
+}
 
-	.sub-menu li a {
-		position:relative;
-		left:-10px;
-	}
+/* 800x1280 */
 
-	li[class="tracks"] {
-		width:20px;
-	}
+@media (width:800px) and (max-width:1279px) {
+  #inner-header>a>img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 6vh;
+    right: -2px;
+    bottom: 3px;
+    position: relative;
+  }
+  #menu-main-menu {
+    float: none;
+  }
+  .nav li.sub-menu-difficult ul.sub-menu {
+    height: 151px;
+    transform: translate3d(7%, 25.25%, 0);
+    top: 13.75px;
+  }
+  .entry-content {
+    margin-top: 7em;
+  }
+  #getinTouch {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
 
-	.menu-item-has-children:after {
-/* 		align-items:baseline;
-	}
+/* 1024x768 */
 
-	.dropdown ul li > a {
-/* 		white-space:nowrap;
-		display:flex;
-		justify-content:space-evenly;
-	}
+@media (width:1024px) and (max-width:1279px) {
+  #inner-header>a>img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 10vh;
+    right: 90px;
+    bottom: 7px;
+    position: relative;
+  }
+  #menu-main-menu {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    bottom: -28.5px;
+  }
+  .nav li.sub-menu-difficult ul.sub-menu {
+    top: 14px;
+    white-space: nowrap;
+    height: 147px;
+  }
+}
 
-	.nav li .dropdown {
-		background-color:#313944;
-		border-top: 1px solid white;
-		position:relative;
-		left:-10vh;
-		bottom:-32px;
-	}
+/* 768x1024 */
 
-	.wrap {
-		height:155px;
-	}
+@media (width:768px) and (max-width:1023px) {
+  #inner-header>a>img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 6.58vh;
+    right: -11px;
+    bottom: 5px;
+    position: relative;
+  }
+  .nav li.sub-menu-difficult ul.sub-menu {
+    top: 13px;
+    white-space: nowrap;
+    height: 149px;
+  }
+  #getinTouch {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* 800x600 */
+
+/*
+@media (width:50em) {
+  #inner-header>a>img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 12vh;
+    right: -20px;
+    position: relative;
+  }
+  #menu-main-menu {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    bottom: -10.5px;
+  }
+  .nav li ul.sub-menu, .nav li ul.children .sub-menu li {
+    top: 2px;
+  }
+  .nav .sub-menu-difficult:hover>ul {
+    height: 151px;
+    transform: translate3d(7%, 25.25%, 0);
+    top: 14px;
+  }
 }
 */
+
+/* 600x800 */
+
+@media (width:600px) and (max-width:799px) {
+  #inner-header {
+    height: 230px;
+  }
+  nav {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: block;
+    flex-wrap: inherit;
+    justify-content: space-around;
+    list-style: none;
+    bottom: -138.5px;
+    left: -98px;
+  }
+  nav .menu-item-has-children ul {
+    position: relative;
+    bottom: -20px;
+  }
+  #inner-header>a>img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 11vh;
+    height: auto;
+    bottom: -60px;
+    position: relative;
+  }
+  .studentPortal>a {
+    width: 132px;
+  }
+  .menu-item-has-children:after {
+    width: 1px;
+    left: -6px;
+  }
+  .nav li ul.sub-menu, .nav li ul.children {
+    position: absolute;
+    width: 165px;
+    top: -10px;
+    height: 173px;
+  }
+  .nav li ul.sub-menu li a, .nav li ul.children li a {
+    padding-left: 10px;
+    border-right: 0;
+    display: flex;
+    width: 165px;
+    height: auto;
+    border-bottom: 1px solid #121212;
+  }
+  .nav li.austinLocation ul.sub-menu {
+    top: -2.5px;
+    white-space: nowrap;
+    height: 149px;
+  }
+  .nav li.sub-menu-difficult ul.sub-menu {
+    top: 10.5px;
+    white-space: nowrap;
+    height: 149px;
+  }
+  #getinTouch {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (width:320px) {
+  #inner-header>a>img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 11vh;
+    height: auto;
+    bottom: -40px;
+    position: relative;
+  }
+  .nav {
+    height: 590px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #menu-main-menu li ul.sub-menu {
+    flex-basis: 100%;
+    opacity: 1;
+    height: 100%;
+  }
+  /*   .sub-menu {
+    opacity:1;
+    display:inline-block;
+  } */
+  .menu-item-has-children:after {
+    position: relative;
+    bottom: -22px;
+  }
+  #getinTouch {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* position absolute on:click for sub-menu */
