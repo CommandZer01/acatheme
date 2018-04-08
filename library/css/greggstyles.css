@@ -55,8 +55,8 @@ http://thesassway.com/advanced/modular-css-naming-conventions
 
 /*Ipad Pro Styling*/
 @media @media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
+  and (min-device-width: 834px)
+  and (max-device-width: 1112px)
   and (-webkit-min-device-pixel-ratio: 2) {
 .boxedWidth.boxedMid.panel-row-style.panel-row-style-for-60-2 {
     margin-right: 50px;
