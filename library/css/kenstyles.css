@@ -1,19 +1,13 @@
 /******************************************************************
 
-Author: Ken's Styles
-
-Stylesheet: this is gregg's don't touch 
+Author: Another Students styles
 
 Here's where the magic happens. Here, you'll see we are calling in
 the separate media queries. The base mobile goes outside any query
 and is called at the beginning, after that we call the rest
 of the styles inside media queries.
 
-Helpful articles on Sass file organization:
-http://thesassway.com/advanced/modular-css-naming-conventions
-
 ******************************************************************/
-
 
 .fullWidthNoBorder {
     width: 100%!important;;
