@@ -140,6 +140,40 @@ of the styles inside media queries.
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
+
+.mobileNav .menu-item-has-children {
+    height: auto;
+}
+
+.mobileNav .menu-item {
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin: 20px;
+    max-height: 75px;
+    position: relative;
+    padding: 20px;
+    font-size: 30px;
+    text-decoration: none!important;
+}
+
+.mobileNav ul {
+    height: 100%;
+    float: left;
+}
+
+.mobileNav .menu-item li a {
+    text-decoration: none;
+}
+
+.mobileNav .menu-item a {
+    text-decoration: none!important;
+}
+
+
 .menu-overlay {
   position: fixed;
   left: 0;
@@ -160,7 +194,7 @@ of the styles inside media queries.
 .menu-overlay.open {
   opacity: 1;
   visibility: visible;
-  z-index: 100;
+  z-index:100;
 }
 .nav {
   display: table-cell;
