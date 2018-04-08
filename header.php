@@ -11,14 +11,14 @@
 		<?php // force Internet Explorer to use the latest rendering engine available ?>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title><?php wp_title(''); ?></title>
+		<title><?php wp_title('Austin Coding Academy'); ?></title>
 
 		<?php // mobile meta (hooray!) ?>
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/library/css/greggstyles.css">
-		
+		<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/library/css/kenstyles.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
@@ -54,11 +54,10 @@
 				<div id="inner-header" class="wrap cf">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<a href="<?php echo home_url(); ?>" rel="nofollow"><img src='/wp-content/uploads/2018/03/ACA-austin-logo-white.png' title='Austin Coding Academy logo' alt='Austin Coding Academy logo'></a>
+					<a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo("/wp-content/uploads/2018/03/ACA-austin-logo-white.png"); ?></a>
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
-					<?php // bloginfo('description'); ?>
-
+					<?php bloginfo("Austin Coding Academy"); ?>
 
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 						<?php wp_nav_menu(array(
