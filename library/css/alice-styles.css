@@ -31,10 +31,9 @@ body {
 
 .footer {
   position: relative;
-  margin: 0 auto;
   width: 100%;
   height: 55px;
-  bottom: 0;
+  bottom: auto;
 }
 
 .footer-nav {
@@ -224,6 +223,10 @@ a:hover, a:focus, a:visited:hover, a:visited:focus {
   padding-top: 0;
 }
 
+#applicationProcess {
+  margin: 250px 0;
+}
+
 #applicationProcess span {
   color: #004568;
 }
@@ -299,7 +302,7 @@ a:hover, a:focus, a:visited:hover, a:visited:focus {
 .faqPanel {
   position: relative;
   bottom: -75px;
-  margin-bottom: 150px;
+  margin-bottom: 350px;
 }
 
 .faqPanel .lsow-accordion.style1 .lsow-panel {
@@ -356,7 +359,9 @@ a:hover, a:focus, a:visited:hover, a:visited:focus {
 
 .companyCarousel {
   position: relative;
-  right: -60px;
+  /*  orlando is looking into this  */
+  margin-bottom: 200px;
+  overflow: hidden;
 }
 
 /* -------------- */
@@ -458,7 +463,8 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
 @media (min-width: 2560px) {
   #menu-main-menu {
     float: none;
-    bottom: -29px
+    position: relative;
+    /*  mess with this    */
   }
   #inner-header>a>img {
     height: 75px;
@@ -472,6 +478,8 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
     white-space: nowrap;
     height: 149px;
   }
+  /* company carousel */
+  /* -------------- */
 }
 
 /* 1600x2560 */
@@ -513,7 +521,7 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
   }
   .footer-links {
     position: relative;
-    bottom: -4px;
+    bottom: 1px;
   }
 }
 
@@ -558,6 +566,10 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
     white-space: nowrap;
     height: 149px;
   }
+  .footer-links {
+    position: relative;
+    bottom: 18px;
+  }
 }
 
 /* 800x1280 */
@@ -591,6 +603,10 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
     display: flex;
     flex-direction: column;
   }
+  .footer-links {
+    position: relative;
+    bottom: -25px;
+  }
 }
 
 /* 1024x768 */
@@ -622,6 +638,10 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
     white-space: nowrap;
     height: 147px;
   }
+  .footer-links {
+    position: relative;
+    bottom: 16px;
+  }
 }
 
 /* 768x1024 */
@@ -646,6 +666,10 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
   #getinTouch {
     display: flex;
     flex-direction: column;
+  }
+  .footer-links {
+    position: relative;
+    bottom: 16px;
   }
 }
 
@@ -739,6 +763,13 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
   #getinTouch {
     display: flex;
     flex-direction: column;
+  }
+  .footer {
+    position: absolute;
+  }
+  .footer-links {
+    position: relative;
+    bottom: 80px;
   }
 }
 
