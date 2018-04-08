@@ -115,6 +115,17 @@ jQuery(document).ready(function($) {
    * You can remove this if you don't need it
   */
   loadGravatars();
+  
+  
+  
+  
+
+    $('.hamburger').click(function(){
+        $(this).toggleClass('open');
+        $('.menu-overlay').toggleClass('open');
+     });
+
+  
 
 
 }); /* end of as page load scripts */

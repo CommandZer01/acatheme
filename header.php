@@ -78,7 +78,13 @@
 					</nav>
 					
 					
-					<nav class="mobileNav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+				<div class="hamburger1 hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+					</div>
+					
+					<nav class="mobileNav menu-overlay" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 						<?php wp_nav_menu(array(
     					         'container' => false,                           // remove nav container
     					         'container_class' => 'mobileMenu',                 // class of container (should you choose to use it)
