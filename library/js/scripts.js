@@ -124,6 +124,13 @@ jQuery(document).ready(function($) {
         $(this).toggleClass('open');
         $('.menu-overlay').toggleClass('open');
      });
+     
+     
+      $('.sub-menu').click(function(){
+        $(this).toggleClass('open');
+        $('.menu-overlay').toggleClass('open');
+     });
+
 
   
 
