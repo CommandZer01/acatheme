@@ -88,9 +88,9 @@
 						<?php wp_nav_menu(array(
     					         'container' => false,                           // remove nav container
     					         'container_class' => 'mobileMenu',                 // class of container (should you choose to use it)
-    					         'menu' => __( 'The Main Menu', 'ACA' ),  // nav name
+    					         'menu' => __( 'Mobile Menu', 'ACAMOBILE' ),  // nav name
     					         'menu_class' => 'mobileMenuTopnav',               // adding custom nav class
-    					         'theme_location' => 'main-nav',                 // where it's located in the theme
+    					         'theme_location' => 'mobile-nav',                 // where it's located in the theme
     					         'before' => '',                                 // before the menu
         			               'after' => '',                                  // after the menu
         			               'link_before' => '',                            // before each link
