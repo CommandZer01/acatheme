@@ -262,7 +262,6 @@ a:hover, a:focus, a:visited:hover, a:visited:focus {
 /* top slider styles */
 
 .topSlider {
-  height: 500px;
   margin-bottom: 100px;
   text-align: center;
 }
@@ -271,8 +270,20 @@ a:hover, a:focus, a:visited:hover, a:visited:focus {
   color: #004568;
 }
 
+/* finish these */
+
+.topSlider ul .textwidget {
+  margin: 55px 0 5px 0;
+}
+
+.topSlider a[href="http://austincodingacademy.com/apply/"] {
+  position: relative;
+  top: -85px;
+}
+
 .calendarIcon {
   position: relative;
+  top: -30px;
   left: -75px;
 }
 
@@ -281,6 +292,11 @@ a:hover, a:focus, a:visited:hover, a:visited:focus {
   color: #004568;
   display: flex;
   justify-content: center;
+}
+
+.whenandWhere {
+  position: relative;
+  top: -30px;
 }
 
 .topSlider .so-widget-sow-layout-slider-default-ac76dd95cbcb .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h4 {
