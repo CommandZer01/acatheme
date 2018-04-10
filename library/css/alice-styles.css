@@ -262,6 +262,9 @@ a:hover, a:focus, a:visited:hover, a:visited:focus {
 /* top slider styles */
 
 .topSlider {
+  position: relative;
+  top: -18px;
+  right: -6px;
   margin-bottom: 100px;
   text-align: center;
 }
@@ -269,8 +272,6 @@ a:hover, a:focus, a:visited:hover, a:visited:focus {
 .topSlider a {
   color: #004568;
 }
-
-/* finish these */
 
 .topSlider ul .textwidget {
   margin: 55px 0 5px 0;
@@ -587,6 +588,9 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
 /* 1024x768 */
 
 @media (width:1024px) and (max-width:1279px) {
+  #inner-content {
+    width: 100%;
+  }
   #inner-header>a>img {
     width: 80px;
     bottom: -22px;
@@ -615,6 +619,50 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
     top: 14px;
     white-space: nowrap;
     height: 147px;
+  }
+  /* top slider styles */
+  .topSlider a {
+    color: #004568;
+  }
+  .topSlider ul .textwidget {
+    margin: 55px 0 5px 0;
+  }
+  .topSlider a[href="http://austincodingacademy.com/apply/"] {
+    position: relative;
+    top: -125px;
+  }
+  .calendarIcon {
+    position: relative;
+    top: -50px;
+    left: 0;
+  }
+  .calendarIcon span {
+    font-size: 3em;
+    color: #004568;
+    display: flex;
+    justify-content: center;
+  }
+  .whenandWhere {
+    position: relative;
+    top: -50px;
+  }
+  .topSlider .so-widget-sow-layout-slider-default-ac76dd95cbcb .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h4 {
+    color: #333;
+  }
+  .whatitCosts {
+    margin-left: 5px;
+  }
+  .whatitCosts h3 {
+    text-align: center;
+  }
+  .linktoTuition {
+    position: relative;
+    top: -30px;
+  }
+  /* -------------- */
+  #getinTouch {
+    display: flex;
+    flex-direction: column;
   }
   .footer-links {
     position: relative;
@@ -655,6 +703,46 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
     transform: translate3d(7%, 25.25%, 0);
     top: 13.5px;
   }
+  /* top slider styles */
+  .topSlider a {
+    color: #004568;
+  }
+  .topSlider ul .textwidget {
+    margin: 55px 0 5px 0;
+  }
+  .topSlider a[href="http://austincodingacademy.com/apply/"] {
+    position: relative;
+    top: -85px;
+  }
+  .calendarIcon {
+    position: relative;
+    top: -50px;
+    left: 0;
+  }
+  .calendarIcon span {
+    font-size: 3em;
+    color: #004568;
+    display: flex;
+    justify-content: center;
+  }
+  .whenandWhere {
+    position: relative;
+    top: -50px;
+  }
+  .topSlider .so-widget-sow-layout-slider-default-ac76dd95cbcb .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h4 {
+    color: #333;
+  }
+  .whatitCosts {
+    margin-left: 5px;
+  }
+  .whatitCosts h3 {
+    text-align: center;
+  }
+  .linktoTuition {
+    position: relative;
+    top: -30px;
+  }
+  /* -------------- */
   #getinTouch {
     width: 100%;
     display: flex;
@@ -683,10 +771,55 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
     white-space: nowrap;
     height: 149px;
   }
-  #getinTouch {
-    display: flex;
-    flex-direction: column;
+  /* top slider styles */
+  .topSlider a {
+    color: #004568;
   }
+  .topSlider ul .textwidget {
+    margin: -20px 0 5px 0;
+  }
+  .topSlider a[href="http://austincodingacademy.com/apply/"] {
+    position: relative;
+    top: -310px;
+  }
+  .calendarIcon {
+    position: relative;
+    top: -25px;
+    left: 0;
+    font-size: 12px;
+  }
+  .calendarIcon span {
+    font-size: 3em;
+    color: #004568;
+    display: flex;
+    justify-content: center;
+  }
+  .whenandWhere {
+    position: relative;
+    top: -40px;
+    font-size: 12px;
+  }
+  .topSlider .so-widget-sow-layout-slider-default-ac76dd95cbcb .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h4 {
+    color: #333;
+  }
+  .whatitCosts {
+    margin-left: 5px;
+  }
+  .whatitCosts h3 {
+    text-align: center;
+  }
+  .linktoTuition {
+    position: relative;
+    top: -30px;
+  }
+  /* -------------- */
+}
+
+#getinTouch {
+  display: flex;
+  flex-direction: column;
+}
+
 }
 
 /* 600x800 */
@@ -716,7 +849,7 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
     align-items: center;
     height: auto;
     position: relative;
-    margin: 40px auto;
+    margin: 40px 20px 40px 234px;
   }
   .menu-item-has-children:after {
     width: 1px;
@@ -747,19 +880,65 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
     white-space: nowrap;
     height: 123.5px;
   }
+  /* top slider styles */
+  .topSlider a {
+    color: #004568;
+  }
+  .topSlider ul .textwidget {
+    margin: -20px 0 5px 0;
+  }
+  .topSlider a[href="http://austincodingacademy.com/apply/"] {
+    position: relative;
+    top: -310px;
+  }
+  .calendarIcon {
+    position: relative;
+    top: -55px;
+    left: 0;
+    font-size: 12px;
+  }
+  .calendarIcon span {
+    font-size: 3em;
+    color: #004568;
+    display: flex;
+    justify-content: center;
+  }
+  .whenandWhere {
+    position: relative;
+    top: -90px;
+    font-size: 12px;
+  }
+  .topSlider .so-widget-sow-layout-slider-default-ac76dd95cbcb .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h4 {
+    color: #333;
+  }
+  .whatitCosts {
+    margin-left: 5px;
+  }
+  .whatitCosts h3 {
+    text-align: center;
+  }
+  .linktoTuition {
+    position: relative;
+    top: -30px;
+  }
+  /* -------------- */
   #getinTouch {
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
     display: flex;
     flex-direction: column;
-  }
-  #inner-footer {
-    margin-top: 173px;
   }
   .footer-links {
     position: relative;
     margin: 0 auto;
-    top: -17px;
+    top: 2px;
     display: flex;
     z-index: 30;
+  }
+  .footer-nav a {
+    margin: 0 20px;
   }
 }
 
