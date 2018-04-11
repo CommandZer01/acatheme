@@ -1,6 +1,7 @@
 #main {
   width: 100%;
   margin-bottom: 60px;
+  padding-right: 0;
 }
 
 #menu-main-menu {
@@ -26,7 +27,7 @@ body {
 
 .hentry header {
   border-bottom: none;
-  padding: 1.5em;
+  padding: 0;
 }
 
 .footer {
@@ -224,7 +225,7 @@ a:hover, a:focus, a:visited:hover, a:visited:focus {
 }
 
 #applicationProcess {
-  margin: 250px 0;
+  margin: 95px 0;
 }
 
 #applicationProcess span {
@@ -263,9 +264,7 @@ a:hover, a:focus, a:visited:hover, a:visited:focus {
 
 .topSlider {
   position: relative;
-  top: -18px;
-  right: -6px;
-  margin-bottom: 100px;
+  margin-bottom: 90px;
   text-align: center;
 }
 
@@ -319,7 +318,7 @@ a:hover, a:focus, a:visited:hover, a:visited:focus {
 .faqPanel {
   position: relative;
   bottom: -75px;
-  margin-bottom: 350px;
+  margin-bottom: 120px;
 }
 
 .faqPanel .lsow-accordion.style1 .lsow-panel {
@@ -376,9 +375,13 @@ a:hover, a:focus, a:visited:hover, a:visited:focus {
 
 .companyCarousel {
   position: relative;
-  /*  orlando is looking into this  */
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   overflow: hidden;
+}
+
+.companyCarousel .slick-slide {
+  display: flex;
+  justify-content: space-around;
 }
 
 /* -------------- */
