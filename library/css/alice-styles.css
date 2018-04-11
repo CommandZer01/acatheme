@@ -19,6 +19,10 @@ nav {
   bottom: -5px;
 }
 
+.menu-overlay.open {
+  z-index: 9999999999999;
+}
+
 body {
   position: relative;
   min-height: 100vh;
@@ -200,10 +204,6 @@ body {
 
 .widget-title {
   font-size: 2.2em;
-}
-
-#content {
-  margin-top: 0;
 }
 
 section a {
@@ -825,6 +825,15 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
 
 }
 
+/* the 767 content bump */
+
+@media (max-width:767px) {
+  #content {
+    position: relative;
+    margin-top: 405px;
+  }
+}
+
 /* 600x800 */
 
 @media (width:600px) and (max-width:799px) {
@@ -926,10 +935,6 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
   }
   /* -------------- */
   #getinTouch {
-    width: 100%;
-    width: -moz-available;
-    width: -webkit-fill-available;
-    width: fill-available;
     display: flex;
     flex-direction: column;
   }
