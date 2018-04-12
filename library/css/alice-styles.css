@@ -281,6 +281,18 @@ a:hover, a:focus, a:visited:hover, a:visited:focus {
   top: -85px;
 }
 
+.topSlider a.lsow-button.lsow-large {
+  font-weight: 500;
+  background-color: #004568;
+}
+
+.topSlider a.lsow-button.lsow-large:hover {
+  font-weight: 900;
+  background-color: #F9B332;
+  color: #000;
+  text-decoration: none;
+}
+
 .calendarIcon {
   position: relative;
   top: -30px;
