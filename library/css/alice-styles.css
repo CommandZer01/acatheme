@@ -122,6 +122,10 @@ body {
   color: #fff;
 }
 
+.nav li a {
+  border-bottom: 2px solid transparent;
+}
+
 .nav li ul.sub-menu li a, .nav li ul.children li a {
   padding-left: 10px;
   border-right: 0;
@@ -133,12 +137,12 @@ body {
 
 .nav li ul.sub-menu, .nav li ul.children {
   border: 1.25px solid #e49607;
-  top: -7px;
+  top: 2.5px;
   float: none;
 }
 
 .nav li.austinLocation ul.sub-menu {
-  top: 1.5px;
+  top: 2px;
 }
 
 .nav li.sub-menu-difficult ul.sub-menu {
@@ -501,10 +505,10 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
     position: relative;
   }
   .nav li.austinLocation ul.sub-menu {
-    top: .5px;
+    top: 2.5px;
   }
   .nav li.sub-menu-difficult ul.sub-menu {
-    top: 12.75px;
+    top: 14.5px;
     white-space: nowrap;
     height: 149px;
   }
@@ -519,7 +523,7 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
     top: -0.5px;
   }
   .nav li ul.sub-menu, .nav li ul.children {
-    top: 1.5px;
+    top: 3.5px;
   }
   ul.sub-menu {
     position: relative;
@@ -544,10 +548,10 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
     height: 100%;
   }
   .nav li.austinLocation ul.sub-menu {
-    top: 1.5px;
+    top: 3.5px;
   }
   .nav li.sub-menu-difficult ul.sub-menu {
-    top: 13.5px;
+    top: 16px;
     white-space: nowrap;
     height: 149px;
   }
@@ -580,6 +584,9 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
     position: relative;
     float: none;
     white-space: nowrap;
+  }
+  .nav li ul.sub-menu, .nav li ul.children {
+    top: 2.5px;
   }
   .sub-menu-difficult ul {
     position: relative;
@@ -628,10 +635,10 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
     bottom: -28.5px;
   }
   .nav li.austinLocation ul.sub-menu {
-    top: .5px;
+    top: 2.5px;
   }
   .nav li.sub-menu-difficult ul.sub-menu {
-    top: 14px;
+    top: 16px;
     white-space: nowrap;
     height: 147px;
   }
@@ -710,6 +717,9 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
     justify-content: space-around;
     list-style: none;
   }
+  .nav li ul.sub-menu, .nav li ul.children {
+    top: 1.5px;
+  }
   .nav li.austinLocation ul.sub-menu {
     top: 1px;
   }
@@ -778,11 +788,14 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
     position: relative;
     height: 100%;
   }
+  .nav li ul.sub-menu, .nav li ul.children {
+    top: 3.5px;
+  }
   .nav li.austinLocation ul.sub-menu {
-    top: 1.75px;
+    top: 3px;
   }
   .nav li.sub-menu-difficult ul.sub-menu {
-    top: 14px;
+    top: 15.5px;
     white-space: nowrap;
     height: 149px;
   }
