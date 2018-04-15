@@ -10,12 +10,14 @@ sidebars, comments, etc.
 
 
 /* load stylesheets */
- function alice_syles() {
+ function alice_styles() {
   wp_register_style ('alice-styles', get_template_directory_uri().'/css/alice-styles.css', array(), '', 'all' );
  }
-
-
-
+/* Load FontAwesome CDN */
+function font_awesome() {
+wp_register_style( 'Font_Awesome', 'https://use.fontawesome.com/releases/v5.0.10/css/all.css' );
+// wp_enqueue_style('Font_Awesome');
+}
 /* wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
 
 wp_enqueue_style( 'bones-stylesheet' );
@@ -60,8 +62,12 @@ function bones_ahoy() {
   // enqueue base scripts and styles
   add_action( 'wp_enqueue_scripts', 'bones_scripts_and_styles', 999 );
 
+  // enqueue font awesome
+  add_action('wp_enqueue_scripts', 'font_awesome', 1000);
+
   // enqueue alice styles
-  add_action('wp_enqueue_scripts', 'alice_styles', 1000);
+  add_action('wp_enqueue_scripts', 'alice_styles', 1001);
+
   // ie conditional wrapper
 
   // launching this stuff after theme setup
@@ -259,6 +265,7 @@ and be up and running in seconds.
 */
 function bones_fonts() {
   wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
+
 }
 
 add_action('wp_enqueue_scripts', 'bones_fonts');
