@@ -1,8 +1,10 @@
-#main {
-  width: 100%;
-  margin-bottom: 60px;
-  padding-right: 0;
+/* weird adjustment to make the pages go from edge to edge on the screen */
+
+.widget {
+  padding: 39px;
 }
+
+/* -------------- */
 
 #menu-main-menu {
   position: relative;
@@ -266,6 +268,10 @@ a:hover, a:focus, a:visited:hover, a:visited:focus {
 
 /* top slider styles */
 
+.topSlider .widget {
+  margin-top: -30px;
+}
+
 .topSlider {
   position: relative;
   margin-bottom: 90px;
@@ -512,6 +518,10 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
     white-space: nowrap;
     height: 149px;
   }
+  .topSlider a[href="http://austincodingacademy.com/apply/"] {
+    position: relative;
+    top: -100px;
+  }
 }
 
 /* 1600x2560 */
@@ -561,293 +571,285 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
   }
 }
 
+/*  random specific adjustment(s) */
+
 @media only screen and (min-width: 1030px) {
   .wrap {
     width: 100%;
   }
-}
-
-/* 1280x800 */
-
-@media (width:1280px) and (max-width: 1599px) {
-  #inner-header>a>img {
-    width: 95px;
-    bottom: -25px;
-    right: -20px;
-    position: relative;
-    height: 100%;
-  }
-  .nav li ul.sub-menu, .nav li ul.children {
-    top: 1.5px;
-  }
-  .nav li {
-    position: relative;
-    float: none;
-    white-space: nowrap;
-  }
-  .nav li ul.sub-menu, .nav li ul.children {
-    top: 2.5px;
-  }
-  .sub-menu-difficult ul {
-    position: relative;
-    height: 198px;
-  }
-  .dropdown ul>li {
-    position: relative;
-    right: -90px;
-  }
-  .nav li.sub-menu-difficult ul.sub-menu {
-    top: 13.95px;
-    white-space: nowrap;
-    height: 149px;
-  }
-  .footer-links {
-    position: relative;
-    bottom: 2px;
-  }
-}
-
-/* 1024x768 */
-
-@media (width:1024px) and (max-width:1279px) {
-  #inner-content {
-    width: 100%;
-  }
-  #inner-header>a>img {
-    width: 80px;
-    bottom: -22px;
-    left: -105px;
-    position: relative;
-    height: 100%;
-  }
-  nav {
-    position: relative;
-    top: -30px;
-  }
-  #menu-main-menu {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
-    bottom: -28.5px;
-  }
-  .nav li.austinLocation ul.sub-menu {
-    top: 2.5px;
-  }
-  .nav li.sub-menu-difficult ul.sub-menu {
-    top: 16px;
-    white-space: nowrap;
-    height: 147px;
-  }
-  /* top slider styles */
-  .topSlider a {
-    color: #004568;
-  }
-  .topSlider ul .textwidget {
-    margin: 55px 0 5px 0;
-  }
-  .topSlider a[href="http://austincodingacademy.com/apply/"] {
-    position: relative;
-    top: -125px;
-  }
-  .calendarIcon {
-    position: relative;
-    top: -50px;
-    left: 0;
-  }
-  .calendarIcon span {
-    font-size: 3em;
-    color: #004568;
-    display: flex;
-    justify-content: center;
-  }
-  .whenandWhere {
-    position: relative;
-    top: -50px;
-  }
-  .topSlider .so-widget-sow-layout-slider-default-ac76dd95cbcb .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h4 {
-    color: #333;
-  }
-  .whatitCosts {
-    margin-left: 5px;
-  }
-  .whatitCosts h3 {
-    text-align: center;
-  }
-  .linktoTuition {
-    position: relative;
-    top: -30px;
-  }
   /* -------------- */
+  /* 1280x800 */
+  @media (width:1280px) and (max-width: 1599px) {
+    #inner-header>a>img {
+      width: 95px;
+      bottom: -25px;
+      right: -20px;
+      position: relative;
+      height: 100%;
+    }
+    .nav li ul.sub-menu, .nav li ul.children {
+      top: 1.5px;
+    }
+    .nav li {
+      position: relative;
+      float: none;
+      white-space: nowrap;
+    }
+    .nav li ul.sub-menu, .nav li ul.children {
+      top: 2.5px;
+    }
+    .sub-menu-difficult ul {
+      position: relative;
+      height: 198px;
+    }
+    .dropdown ul>li {
+      position: relative;
+      right: -90px;
+    }
+    .nav li.sub-menu-difficult ul.sub-menu {
+      top: 13.95px;
+      white-space: nowrap;
+      height: 149px;
+    }
+    .footer-links {
+      position: relative;
+      bottom: 2px;
+    }
+  }
+  /* 1024x768 */
+  @media (width:1024px) and (max-width:1279px) {
+    #inner-content {
+      width: 100%;
+    }
+    #inner-header>a>img {
+      width: 80px;
+      bottom: -22px;
+      left: -105px;
+      position: relative;
+      height: 100%;
+    }
+    nav {
+      position: relative;
+      top: -30px;
+    }
+    #menu-main-menu {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      list-style: none;
+      bottom: -28.5px;
+    }
+    .nav li.austinLocation ul.sub-menu {
+      top: 2.5px;
+    }
+    .nav li.sub-menu-difficult ul.sub-menu {
+      top: 16px;
+      white-space: nowrap;
+      height: 147px;
+    }
+    /* top slider styles */
+    .topSlider a {
+      color: #004568;
+    }
+    .topSlider ul .textwidget {
+      margin: 55px 0 5px 0;
+    }
+    .topSlider a[href="http://austincodingacademy.com/apply/"] {
+      position: relative;
+      top: -125px;
+    }
+    .calendarIcon {
+      position: relative;
+      top: -50px;
+      left: 0;
+    }
+    .calendarIcon span {
+      font-size: 3em;
+      color: #004568;
+      display: flex;
+      justify-content: center;
+    }
+    .whenandWhere {
+      position: relative;
+      top: -50px;
+    }
+    .topSlider .so-widget-sow-layout-slider-default-ac76dd95cbcb .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h4 {
+      color: #333;
+    }
+    .whatitCosts {
+      margin-left: 5px;
+    }
+    .whatitCosts h3 {
+      text-align: center;
+    }
+    .linktoTuition {
+      position: relative;
+      top: -30px;
+    }
+    /* -------------- */
+    #getinTouch {
+      display: flex;
+      flex-direction: column;
+    }
+    .footer-links {
+      position: relative;
+      bottom: -35px;
+    }
+  }
+  /*  FIX THE HEADER  */
+  /* 800x600 */
+  @media (width:800px) {
+    .header {
+      min-height: 150px;
+    }
+    #inner-header>a>img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      right: -5px;
+      position: relative;
+    }
+    #menu-main-menu {
+      position: relative;
+      float: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      list-style: none;
+    }
+    .nav li ul.sub-menu, .nav li ul.children {
+      top: 1.5px;
+    }
+    .nav li.austinLocation ul.sub-menu {
+      top: 1px;
+    }
+    .nav li.sub-menu-difficult ul.sub-menu {
+      height: 151px;
+      transform: translate3d(7%, 25.25%, 0);
+      top: 13.5px;
+    }
+    /* top slider styles */
+    .topSlider a {
+      color: #004568;
+    }
+    .topSlider ul .textwidget {
+      margin: 55px 0 5px 0;
+    }
+    .topSlider a[href="http://austincodingacademy.com/apply/"] {
+      position: relative;
+      top: -85px;
+    }
+    .calendarIcon {
+      position: relative;
+      top: -50px;
+      left: 0;
+    }
+    .calendarIcon span {
+      font-size: 3em;
+      color: #004568;
+      display: flex;
+      justify-content: center;
+    }
+    .whenandWhere {
+      position: relative;
+      top: -50px;
+    }
+    .topSlider .so-widget-sow-layout-slider-default-ac76dd95cbcb .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h4 {
+      color: #333;
+    }
+    .whatitCosts {
+      margin-left: 5px;
+    }
+    .whatitCosts h3 {
+      text-align: center;
+    }
+    .linktoTuition {
+      position: relative;
+      top: -30px;
+    }
+    /* -------------- */
+    #getinTouch {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  /* 768x1024 */
+  @media (width:768px) and (max-width:799px) {
+    .header {
+      min-height: 150px;
+    }
+    #inner-header>a>img {
+      width: 95px;
+      bottom: -10px;
+      right: -25px;
+      position: relative;
+      height: 100%;
+    }
+    .nav li ul.sub-menu, .nav li ul.children {
+      top: 3.5px;
+    }
+    .nav li.austinLocation ul.sub-menu {
+      top: 3px;
+    }
+    .nav li.sub-menu-difficult ul.sub-menu {
+      top: 15.5px;
+      white-space: nowrap;
+      height: 149px;
+    }
+    /* top slider styles */
+    .topSlider a {
+      color: #004568;
+    }
+    .topSlider ul .textwidget {
+      margin: -20px 0 5px 0;
+    }
+    .topSlider a[href="http://austincodingacademy.com/apply/"] {
+      position: relative;
+      top: -310px;
+    }
+    .calendarIcon {
+      position: relative;
+      top: -25px;
+      left: 0;
+      font-size: 12px;
+    }
+    .calendarIcon span {
+      font-size: 3em;
+      color: #004568;
+      display: flex;
+      justify-content: center;
+    }
+    .whenandWhere {
+      position: relative;
+      top: -40px;
+      font-size: 12px;
+    }
+    .topSlider .so-widget-sow-layout-slider-default-ac76dd95cbcb .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h4 {
+      color: #333;
+    }
+    .whatitCosts {
+      margin-left: 5px;
+    }
+    .whatitCosts h3 {
+      text-align: center;
+    }
+    .linktoTuition {
+      position: relative;
+      top: -30px;
+    }
+    /* -------------- */
+  }
   #getinTouch {
     display: flex;
     flex-direction: column;
   }
-  .footer-links {
-    position: relative;
-    bottom: -35px;
-  }
-}
-
-/* 800x600 */
-
-@media (width:800px) {
-  .header {
-    min-height: 150px;
-  }
-  #inner-header>a>img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    right: -5px;
-    position: relative;
-  }
-  #menu-main-menu {
-    position: relative;
-    float: none;
-    bottom: -30px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style: none;
-  }
-  .nav li ul.sub-menu, .nav li ul.children {
-    top: 1.5px;
-  }
-  .nav li.austinLocation ul.sub-menu {
-    top: 1px;
-  }
-  .nav li.sub-menu-difficult ul.sub-menu {
-    height: 151px;
-    transform: translate3d(7%, 25.25%, 0);
-    top: 13.5px;
-  }
-  /* top slider styles */
-  .topSlider a {
-    color: #004568;
-  }
-  .topSlider ul .textwidget {
-    margin: 55px 0 5px 0;
-  }
-  .topSlider a[href="http://austincodingacademy.com/apply/"] {
-    position: relative;
-    top: -85px;
-  }
-  .calendarIcon {
-    position: relative;
-    top: -50px;
-    left: 0;
-  }
-  .calendarIcon span {
-    font-size: 3em;
-    color: #004568;
-    display: flex;
-    justify-content: center;
-  }
-  .whenandWhere {
-    position: relative;
-    top: -50px;
-  }
-  .topSlider .so-widget-sow-layout-slider-default-ac76dd95cbcb .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h4 {
-    color: #333;
-  }
-  .whatitCosts {
-    margin-left: 5px;
-  }
-  .whatitCosts h3 {
-    text-align: center;
-  }
-  .linktoTuition {
-    position: relative;
-    top: -30px;
-  }
-  /* -------------- */
-  #getinTouch {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-/* 768x1024 */
-
-@media (width:768px) and (max-width:799px) {
-  .header {
-    min-height: 150px;
-  }
-  #inner-header>a>img {
-    width: 95px;
-    bottom: -10px;
-    right: -25px;
-    position: relative;
-    height: 100%;
-  }
-  .nav li ul.sub-menu, .nav li ul.children {
-    top: 3.5px;
-  }
-  .nav li.austinLocation ul.sub-menu {
-    top: 3px;
-  }
-  .nav li.sub-menu-difficult ul.sub-menu {
-    top: 15.5px;
-    white-space: nowrap;
-    height: 149px;
-  }
-  /* top slider styles */
-  .topSlider a {
-    color: #004568;
-  }
-  .topSlider ul .textwidget {
-    margin: -20px 0 5px 0;
-  }
-  .topSlider a[href="http://austincodingacademy.com/apply/"] {
-    position: relative;
-    top: -310px;
-  }
-  .calendarIcon {
-    position: relative;
-    top: -25px;
-    left: 0;
-    font-size: 12px;
-  }
-  .calendarIcon span {
-    font-size: 3em;
-    color: #004568;
-    display: flex;
-    justify-content: center;
-  }
-  .whenandWhere {
-    position: relative;
-    top: -40px;
-    font-size: 12px;
-  }
-  .topSlider .so-widget-sow-layout-slider-default-ac76dd95cbcb .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h4 {
-    color: #333;
-  }
-  .whatitCosts {
-    margin-left: 5px;
-  }
-  .whatitCosts h3 {
-    text-align: center;
-  }
-  .linktoTuition {
-    position: relative;
-    top: -30px;
-  }
-  /* -------------- */
-}
-
-#getinTouch {
-  display: flex;
-  flex-direction: column;
-}
-
 }
 
 /* the 767 content bump */
