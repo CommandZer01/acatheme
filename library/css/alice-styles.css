@@ -410,6 +410,10 @@ a:hover, a:focus, a:visited:hover, a:visited:focus {
 
 /* bottom buttons main page */
 
+#getinTouch {
+  margin: 0 0 120px;
+}
+
 #getinTouch .lsow-button {
   margin: 0 auto;
   display: flex;
@@ -421,6 +425,10 @@ a:hover, a:focus, a:visited:hover, a:visited:focus {
 
 #getinTouch .lsow-button span {
   line-height: 10px;
+}
+
+.getinTouchCells .widget {
+  padding: 0;
 }
 
 /* -------------- */
@@ -699,7 +707,7 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
       bottom: -35px;
     }
   }
-  /*  FIX THE HEADER  */
+  /*  FIX THE HEADER and none of these rules work???  */
   /* 800x600 */
   @media (width:800px) {
     .header {
@@ -739,7 +747,7 @@ a[href="https://www.instagram.com/austincodingacademy"]:before {
       color: #004568;
     }
     .topSlider ul .textwidget {
-      margin: 55px 0 5px 0;
+      margin-top: 55px;
     }
     .topSlider a[href="http://austincodingacademy.com/apply/"] {
       position: relative;
